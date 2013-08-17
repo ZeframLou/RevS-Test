@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="Q2t-Nz-Waq">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="mCu-8l-Jvf">
+            <objects>
+                <viewController id="Q2t-Nz-Waq" customClass="TestViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dS8-Nk-s35">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="INPUT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMb-u7-0Eu">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Elf-vl-Pk8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="OUTPUT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1W2-Ql-aYy">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="kgK-rc-SBS"/>
+                                    <constraint firstAttribute="width" constant="108" id="qxb-9O-t3G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNU-O1-gUG">
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="pR0-re-Enk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="UPLOAD">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadPressed:" destination="Q2t-Nz-Waq" eventType="touchUpInside" id="3Kw-xq-yKh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBj-hT-00X">
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="aMH-0K-tdC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="DOWNLOAD">
+                                    <color key="titleColor" red="0.6605839416" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadPressed:" destination="Q2t-Nz-Waq" eventType="touchUpInside" id="ota-JY-ZKD"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="03v-iq-N8q">
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="136" type="user" id="nNc-1R-53T"/>
+                                    <constraint firstAttribute="height" constant="120" id="oyQ-ce-XRN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUx-jh-Vyd">
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bBj-hT-00X" firstAttribute="leading" secondItem="dS8-Nk-s35" secondAttribute="leading" type="default" id="3F4-37-gYk"/>
+                            <constraint firstItem="bBj-hT-00X" firstAttribute="trailing" secondItem="dS8-Nk-s35" secondAttribute="trailing" type="default" id="AlX-o6-u1t"/>
+                            <constraint firstItem="1W2-Ql-aYy" firstAttribute="centerY" secondItem="YUx-jh-Vyd" secondAttribute="centerY" type="default" id="DEk-9T-Qht"/>
+                            <constraint firstItem="mMb-u7-0Eu" firstAttribute="centerY" secondItem="03v-iq-N8q" secondAttribute="centerY" type="default" id="H24-KH-OSn"/>
+                            <constraint firstItem="zNU-O1-gUG" firstAttribute="trailing" secondItem="dS8-Nk-s35" secondAttribute="trailing" type="default" id="Hy1-NF-916"/>
+                            <constraint firstItem="zNU-O1-gUG" firstAttribute="leading" secondItem="dS8-Nk-s35" secondAttribute="leading" type="default" id="MQZ-tm-VsW"/>
+                            <constraint firstItem="03v-iq-N8q" firstAttribute="top" secondItem="dS8-Nk-s35" secondAttribute="top" type="default" id="OGy-xa-iHr"/>
+                            <constraint firstItem="bBj-hT-00X" firstAttribute="top" secondItem="zNU-O1-gUG" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="T7C-dC-nPP"/>
+                            <constraint firstItem="YUx-jh-Vyd" firstAttribute="top" secondItem="bBj-hT-00X" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="XQz-R8-Cbl"/>
+                            <constraint firstItem="zNU-O1-gUG" firstAttribute="top" secondItem="03v-iq-N8q" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Y1I-aR-bdW"/>
+                            <constraint firstItem="03v-iq-N8q" firstAttribute="leading" secondItem="dS8-Nk-s35" secondAttribute="leading" type="default" id="h7O-Hm-8oU"/>
+                            <constraint firstItem="YUx-jh-Vyd" firstAttribute="trailing" secondItem="dS8-Nk-s35" secondAttribute="trailing" type="default" id="keu-hY-8r2"/>
+                            <constraint firstItem="mMb-u7-0Eu" firstAttribute="centerX" secondItem="03v-iq-N8q" secondAttribute="centerX" type="default" id="nw7-Kp-0q9"/>
+                            <constraint firstItem="03v-iq-N8q" firstAttribute="trailing" secondItem="dS8-Nk-s35" secondAttribute="trailing" type="default" id="pCy-qR-Jgx"/>
+                            <constraint firstItem="YUx-jh-Vyd" firstAttribute="bottom" secondItem="dS8-Nk-s35" secondAttribute="bottom" type="default" id="rK9-Vs-yYq"/>
+                            <constraint firstItem="YUx-jh-Vyd" firstAttribute="leading" secondItem="dS8-Nk-s35" secondAttribute="leading" type="default" id="sbJ-3x-5xX"/>
+                            <constraint firstItem="1W2-Ql-aYy" firstAttribute="centerX" secondItem="YUx-jh-Vyd" secondAttribute="centerX" type="default" id="vIW-Fr-dlj"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="inputTextView" destination="03v-iq-N8q" id="FbS-uf-8RB"/>
+                        <outlet property="outputTextView" destination="YUx-jh-Vyd" id="cGG-t1-BOl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OR5-cV-APd" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TestViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TestViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="inputTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="outputTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
