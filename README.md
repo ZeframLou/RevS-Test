@@ -1,4 +1,4 @@
 RevSTest
 ========
 
-A test app using RevS for Objective-C
+A test app using RevS for iPhone(You can use the codes in a Mac app too)
