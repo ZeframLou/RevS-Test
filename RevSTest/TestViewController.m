@@ -23,7 +23,7 @@
 {
     [super viewDidLoad];
     inputTextView.delegate = self;
-    [[RSNodeManage sharedInstance]join];
+    [RSNodeManage join];
     [[RSDownload sharedInstance] addDelegate:self];
     [[RSUpload sharedInstance] addDelegate:self];
 }
