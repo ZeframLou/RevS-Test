@@ -7,19 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE59F60517BCDB89003F47A2 /* RSMessager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE59F60417BCDB89003F47A2 /* RSMessager.m */; };
+		CE98B55E17CA315E00F1F8BF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBF5D9017BA05B800FEFB22 /* MainStoryboard.storyboard */; };
+		CE98B55F17CA315E00F1F8BF /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBF5E0417BBCB6500FEFB22 /* MainStoryboard_iPad.storyboard */; };
+		CE98B56017CA315E00F1F8BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEBF5D8117BA05B800FEFB22 /* InfoPlist.strings */; };
+		CE98B56217CA335500F1F8BF /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = CE98B56117CA335500F1F8BF /* GCDAsyncSocket.m */; };
+		CE98B56617CB0C0700F1F8BF /* RSMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = CE98B56517CB0C0700F1F8BF /* RSMessenger.m */; };
 		CEBF5D7917BA05B800FEFB22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBF5D7817BA05B800FEFB22 /* UIKit.framework */; };
 		CEBF5D7B17BA05B800FEFB22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBF5D7A17BA05B800FEFB22 /* Foundation.framework */; };
 		CEBF5D7D17BA05B800FEFB22 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBF5D7C17BA05B800FEFB22 /* CoreGraphics.framework */; };
-		CEBF5D8317BA05B800FEFB22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEBF5D8117BA05B800FEFB22 /* InfoPlist.strings */; };
 		CEBF5D8517BA05B800FEFB22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF5D8417BA05B800FEFB22 /* main.m */; };
 		CEBF5D8917BA05B800FEFB22 /* TestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF5D8817BA05B800FEFB22 /* TestAppDelegate.m */; };
 		CEBF5D8B17BA05B800FEFB22 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBF5D8A17BA05B800FEFB22 /* Default.png */; };
 		CEBF5D8D17BA05B800FEFB22 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBF5D8C17BA05B800FEFB22 /* Default@2x.png */; };
 		CEBF5D8F17BA05B800FEFB22 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBF5D8E17BA05B800FEFB22 /* Default-568h@2x.png */; };
-		CEBF5D9217BA05B800FEFB22 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBF5D9017BA05B800FEFB22 /* MainStoryboard.storyboard */; };
 		CEBF5D9517BA05B800FEFB22 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF5D9417BA05B800FEFB22 /* TestViewController.m */; };
-		CEBF5DF217BA4EB700FEFB22 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF5DDF17BA4EB600FEFB22 /* GCDAsyncSocket.m */; };
 		CEBF5DF317BA4EB700FEFB22 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF5DE117BA4EB600FEFB22 /* GCDAsyncUdpSocket.m */; };
 		CEBF5DF417BA4EB700FEFB22 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF5DE317BA4EB600FEFB22 /* NSData+AES.m */; };
 		CEBF5DF517BA4EB700FEFB22 /* RSDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF5DE717BA4EB600FEFB22 /* RSDownload.m */; };
@@ -29,49 +30,48 @@
 		CEBF5DFA17BA4EB700FEFB22 /* RSUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF5DF117BA4EB700FEFB22 /* RSUtilities.m */; };
 		CEBF5DFC17BA514200FEFB22 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBF5DFB17BA514200FEFB22 /* Security.framework */; };
 		CEBF5DFE17BA514C00FEFB22 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBF5DFD17BA514C00FEFB22 /* CFNetwork.framework */; };
-		CEBF5E0517BBCB6500FEFB22 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBF5E0417BBCB6500FEFB22 /* MainStoryboard_iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE59F60317BCDB89003F47A2 /* RSMessager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSMessager.h; sourceTree = "<group>"; };
-		CE59F60417BCDB89003F47A2 /* RSMessager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSMessager.m; sourceTree = "<group>"; };
+		CE98B56117CA335500F1F8BF /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = SOURCE_ROOT; };
+		CE98B56317CA349400F1F8BF /* RevSTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RevSTest-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		CE98B56417CB0C0700F1F8BF /* RSMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSMessenger.h; sourceTree = SOURCE_ROOT; };
+		CE98B56517CB0C0700F1F8BF /* RSMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSMessenger.m; sourceTree = SOURCE_ROOT; };
 		CEBF5D7517BA05B800FEFB22 /* RevSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBF5D7817BA05B800FEFB22 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEBF5D7A17BA05B800FEFB22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEBF5D7C17BA05B800FEFB22 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CEBF5D8017BA05B800FEFB22 /* RevSTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RevSTest-Info.plist"; sourceTree = "<group>"; };
+		CEBF5D8017BA05B800FEFB22 /* RevSTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RevSTest-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CEBF5D8217BA05B800FEFB22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CEBF5D8417BA05B800FEFB22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CEBF5D8617BA05B800FEFB22 /* RevSTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RevSTest-Prefix.pch"; sourceTree = "<group>"; };
-		CEBF5D8717BA05B800FEFB22 /* TestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAppDelegate.h; sourceTree = "<group>"; };
-		CEBF5D8817BA05B800FEFB22 /* TestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAppDelegate.m; sourceTree = "<group>"; };
-		CEBF5D8A17BA05B800FEFB22 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		CEBF5D8C17BA05B800FEFB22 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		CEBF5D8E17BA05B800FEFB22 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CEBF5D8417BA05B800FEFB22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		CEBF5D8717BA05B800FEFB22 /* TestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		CEBF5D8817BA05B800FEFB22 /* TestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		CEBF5D8A17BA05B800FEFB22 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
+		CEBF5D8C17BA05B800FEFB22 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		CEBF5D8E17BA05B800FEFB22 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		CEBF5D9117BA05B800FEFB22 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		CEBF5D9317BA05B800FEFB22 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		CEBF5D9417BA05B800FEFB22 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		CEBF5DDE17BA4EB600FEFB22 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
-		CEBF5DDF17BA4EB600FEFB22 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
-		CEBF5DE017BA4EB600FEFB22 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
-		CEBF5DE117BA4EB600FEFB22 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
-		CEBF5DE217BA4EB600FEFB22 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
-		CEBF5DE317BA4EB600FEFB22 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
-		CEBF5DE417BA4EB600FEFB22 /* RevS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevS.h; sourceTree = "<group>"; };
-		CEBF5DE517BA4EB600FEFB22 /* RSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSConstants.h; sourceTree = "<group>"; };
-		CEBF5DE617BA4EB600FEFB22 /* RSDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDownload.h; sourceTree = "<group>"; };
-		CEBF5DE717BA4EB600FEFB22 /* RSDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDownload.m; sourceTree = "<group>"; };
-		CEBF5DE817BA4EB600FEFB22 /* RSListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSListener.h; sourceTree = "<group>"; };
-		CEBF5DE917BA4EB600FEFB22 /* RSListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSListener.m; sourceTree = "<group>"; };
-		CEBF5DEC17BA4EB600FEFB22 /* RSNodeManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSNodeManage.h; sourceTree = "<group>"; };
-		CEBF5DED17BA4EB700FEFB22 /* RSNodeManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSNodeManage.m; sourceTree = "<group>"; };
-		CEBF5DEE17BA4EB700FEFB22 /* RSUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSUpload.h; sourceTree = "<group>"; };
-		CEBF5DEF17BA4EB700FEFB22 /* RSUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSUpload.m; sourceTree = "<group>"; };
-		CEBF5DF017BA4EB700FEFB22 /* RSUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSUtilities.h; sourceTree = "<group>"; };
-		CEBF5DF117BA4EB700FEFB22 /* RSUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSUtilities.m; sourceTree = "<group>"; };
+		CEBF5D9317BA05B800FEFB22 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = SOURCE_ROOT; };
+		CEBF5D9417BA05B800FEFB22 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = SOURCE_ROOT; };
+		CEBF5DDE17BA4EB600FEFB22 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = SOURCE_ROOT; };
+		CEBF5DE017BA4EB600FEFB22 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = SOURCE_ROOT; };
+		CEBF5DE117BA4EB600FEFB22 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = SOURCE_ROOT; };
+		CEBF5DE217BA4EB600FEFB22 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = SOURCE_ROOT; };
+		CEBF5DE317BA4EB600FEFB22 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = SOURCE_ROOT; };
+		CEBF5DE417BA4EB600FEFB22 /* RevS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevS.h; sourceTree = SOURCE_ROOT; };
+		CEBF5DE517BA4EB600FEFB22 /* RSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSConstants.h; sourceTree = SOURCE_ROOT; };
+		CEBF5DE617BA4EB600FEFB22 /* RSDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDownload.h; sourceTree = SOURCE_ROOT; };
+		CEBF5DE717BA4EB600FEFB22 /* RSDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDownload.m; sourceTree = SOURCE_ROOT; };
+		CEBF5DE817BA4EB600FEFB22 /* RSListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSListener.h; sourceTree = SOURCE_ROOT; };
+		CEBF5DE917BA4EB600FEFB22 /* RSListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSListener.m; sourceTree = SOURCE_ROOT; };
+		CEBF5DEC17BA4EB600FEFB22 /* RSNodeManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSNodeManage.h; sourceTree = SOURCE_ROOT; };
+		CEBF5DED17BA4EB700FEFB22 /* RSNodeManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSNodeManage.m; sourceTree = SOURCE_ROOT; };
+		CEBF5DEE17BA4EB700FEFB22 /* RSUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSUpload.h; sourceTree = SOURCE_ROOT; };
+		CEBF5DEF17BA4EB700FEFB22 /* RSUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSUpload.m; sourceTree = SOURCE_ROOT; };
+		CEBF5DF017BA4EB700FEFB22 /* RSUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSUtilities.h; sourceTree = SOURCE_ROOT; };
+		CEBF5DF117BA4EB700FEFB22 /* RSUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSUtilities.m; sourceTree = SOURCE_ROOT; };
 		CEBF5DFB17BA514200FEFB22 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		CEBF5DFD17BA514C00FEFB22 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		CEBF5E0417BBCB6500FEFB22 /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		CEBF5E0417BBCB6500FEFB22 /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,8 @@
 				CEBF5DDD17BA4E7900FEFB22 /* RevS */,
 				CEBF5D7F17BA05B800FEFB22 /* Supporting Files */,
 			);
-			path = RevSTest;
+			name = RevSTest;
+			path = "Objective-C";
 			sourceTree = "<group>";
 		};
 		CEBF5D7F17BA05B800FEFB22 /* Supporting Files */ = {
@@ -140,7 +141,7 @@
 				CEBF5D8017BA05B800FEFB22 /* RevSTest-Info.plist */,
 				CEBF5D8117BA05B800FEFB22 /* InfoPlist.strings */,
 				CEBF5D8417BA05B800FEFB22 /* main.m */,
-				CEBF5D8617BA05B800FEFB22 /* RevSTest-Prefix.pch */,
+				CE98B56317CA349400F1F8BF /* RevSTest-Prefix.pch */,
 				CEBF5D8A17BA05B800FEFB22 /* Default.png */,
 				CEBF5D8C17BA05B800FEFB22 /* Default@2x.png */,
 				CEBF5D8E17BA05B800FEFB22 /* Default-568h@2x.png */,
@@ -152,7 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				CEBF5DDE17BA4EB600FEFB22 /* GCDAsyncSocket.h */,
-				CEBF5DDF17BA4EB600FEFB22 /* GCDAsyncSocket.m */,
+				CE98B56117CA335500F1F8BF /* GCDAsyncSocket.m */,
 				CEBF5DE017BA4EB600FEFB22 /* GCDAsyncUdpSocket.h */,
 				CEBF5DE117BA4EB600FEFB22 /* GCDAsyncUdpSocket.m */,
 				CEBF5DE217BA4EB600FEFB22 /* NSData+AES.h */,
@@ -163,8 +164,8 @@
 				CEBF5DE717BA4EB600FEFB22 /* RSDownload.m */,
 				CEBF5DE817BA4EB600FEFB22 /* RSListener.h */,
 				CEBF5DE917BA4EB600FEFB22 /* RSListener.m */,
-				CE59F60317BCDB89003F47A2 /* RSMessager.h */,
-				CE59F60417BCDB89003F47A2 /* RSMessager.m */,
+				CE98B56417CB0C0700F1F8BF /* RSMessenger.h */,
+				CE98B56517CB0C0700F1F8BF /* RSMessenger.m */,
 				CEBF5DEC17BA4EB600FEFB22 /* RSNodeManage.h */,
 				CEBF5DED17BA4EB700FEFB22 /* RSNodeManage.m */,
 				CEBF5DEE17BA4EB700FEFB22 /* RSUpload.h */,
@@ -173,7 +174,8 @@
 				CEBF5DF117BA4EB700FEFB22 /* RSUtilities.m */,
 			);
 			name = RevS;
-			sourceTree = "<group>";
+			path = "Objective-C";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -227,12 +229,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBF5D8317BA05B800FEFB22 /* InfoPlist.strings in Resources */,
+				CE98B55E17CA315E00F1F8BF /* MainStoryboard.storyboard in Resources */,
+				CE98B55F17CA315E00F1F8BF /* MainStoryboard_iPad.storyboard in Resources */,
+				CE98B56017CA315E00F1F8BF /* InfoPlist.strings in Resources */,
 				CEBF5D8B17BA05B800FEFB22 /* Default.png in Resources */,
 				CEBF5D8D17BA05B800FEFB22 /* Default@2x.png in Resources */,
 				CEBF5D8F17BA05B800FEFB22 /* Default-568h@2x.png in Resources */,
-				CEBF5D9217BA05B800FEFB22 /* MainStoryboard.storyboard in Resources */,
-				CEBF5E0517BBCB6500FEFB22 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +248,6 @@
 				CEBF5D8517BA05B800FEFB22 /* main.m in Sources */,
 				CEBF5D8917BA05B800FEFB22 /* TestAppDelegate.m in Sources */,
 				CEBF5D9517BA05B800FEFB22 /* TestViewController.m in Sources */,
-				CEBF5DF217BA4EB700FEFB22 /* GCDAsyncSocket.m in Sources */,
 				CEBF5DF317BA4EB700FEFB22 /* GCDAsyncUdpSocket.m in Sources */,
 				CEBF5DF417BA4EB700FEFB22 /* NSData+AES.m in Sources */,
 				CEBF5DF517BA4EB700FEFB22 /* RSDownload.m in Sources */,
@@ -254,7 +255,8 @@
 				CEBF5DF817BA4EB700FEFB22 /* RSNodeManage.m in Sources */,
 				CEBF5DF917BA4EB700FEFB22 /* RSUpload.m in Sources */,
 				CEBF5DFA17BA4EB700FEFB22 /* RSUtilities.m in Sources */,
-				CE59F60517BCDB89003F47A2 /* RSMessager.m in Sources */,
+				CE98B56217CA335500F1F8BF /* GCDAsyncSocket.m in Sources */,
+				CE98B56617CB0C0700F1F8BF /* RSMessenger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +269,7 @@
 				CEBF5D8217BA05B800FEFB22 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		CEBF5D9017BA05B800FEFB22 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -275,7 +277,7 @@
 				CEBF5D9117BA05B800FEFB22 /* en */,
 			);
 			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
@@ -344,8 +346,8 @@
 					"\"$(SRCROOT)/../../..\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RevSTest/RevSTest-Prefix.pch";
-				INFOPLIST_FILE = "RevSTest/RevSTest-Info.plist";
+				GCC_PREFIX_HEADER = "RevSTest-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/RevSTest-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -367,8 +369,8 @@
 					"\"$(SRCROOT)/../../..\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RevSTest/RevSTest-Prefix.pch";
-				INFOPLIST_FILE = "RevSTest/RevSTest-Info.plist";
+				GCC_PREFIX_HEADER = "RevSTest-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/RevSTest-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

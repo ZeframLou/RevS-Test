@@ -28,13 +28,13 @@
 @interface RSDownload () <RSListenerDelegate>
 
 @property (nonatomic,strong) NSMutableArray *delegates;
-@property (nonatomic,strong) RSMessager *messager;
+@property (nonatomic,strong) RSMessenger *messenger;
 
 @end
 
 @implementation RSDownload
 
-@synthesize delegates,messager;
+@synthesize delegates,messenger;
 
 + (RSDownload *)sharedInstance
 {
@@ -42,33 +42,33 @@
     if (!sharedInstance) {
         sharedInstance = [[RSDownload alloc]init];
         sharedInstance.delegates = [NSMutableArray array];
-        sharedInstance.messager = [RSMessager messagerWithPort:DOWNLOAD_PORT];
-        [sharedInstance.messager addDelegate:[RSListener sharedListener]];
-        [[RSListener sharedListener] addDelegate:sharedInstance];
+        sharedInstance.messenger = [RSMessenger messengerWithPort:DOWNLOAD_PORT];
+        [sharedInstance.messenger addDelegate:[RSListener sharedListener]];
+        [RSListener addDelegate:sharedInstance];
     }
     return sharedInstance;
 }
 
-- (void)downloadFile:(NSString *)fileName;
++ (void)downloadFile:(NSString *)fileName;
 {
     NSArray *contactList = [RSUtilities contactListWithKValue:K];
     [[NSUserDefaults standardUserDefaults]removeObjectForKey:[NSString stringWithFormat:@"%@:gotAHit",fileName]];
     //Send search query
     for (NSString *ipAddress in contactList) {
-        NSString *messageString = [RSMessager messageWithIdentifier:@"S" arguments:@[[RSUtilities getLocalIPAddress],[RSUtilities getLocalIPAddress],fileName,[NSString stringWithFormat:@"%ld",TTL]]];
-        [messager sendTcpMessage:messageString toHost:ipAddress tag:0];
+        NSString *messageString = [RSMessenger messageWithIdentifier:@"S" arguments:@[[RSUtilities getLocalIPAddress],[RSUtilities getLocalIPAddress],fileName,[NSString stringWithFormat:@"%ld",(unsigned long)TTL]]];
+        [[RSDownload sharedInstance].messenger sendTcpMessage:messageString toHost:ipAddress tag:0];
     }
 }
 
-- (void)downloadFile:(NSString *)fileName fromIP:(NSString *)ipAddress
++ (void)downloadFile:(NSString *)fileName fromIP:(NSString *)ipAddress
 {
-    [messager sendTcpMessage:[RSMessager messageWithIdentifier:@"DFILE" arguments:@[fileName,[RSUtilities getLocalIPAddress]]] toHost:ipAddress tag:0];
+    [[RSDownload sharedInstance].messenger sendTcpMessage:[RSMessenger messageWithIdentifier:@"DFILE" arguments:@[fileName,[RSUtilities getLocalIPAddress]]] toHost:ipAddress tag:0];
 }
 
-- (void)addDelegate:(id <RSDownloadDelegate>)delegate
++ (void)addDelegate:(id <RSDownloadDelegate>)delegate
 {
-    if (![delegates containsObject:delegate]) {
-        [delegates addObject:delegate];
+    if (![[RSDownload sharedInstance].delegates containsObject:delegate]) {
+        [[RSDownload sharedInstance].delegates addObject:delegate];
     }
 }
 

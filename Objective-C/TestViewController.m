@@ -9,9 +9,9 @@
 #import "TestViewController.h"
 #import "RevS.h"
 
-@interface TestViewController () <RSUploadDelegate,RSDownloadDelegate,UITextViewDelegate,RSMessagerDelegate>
+@interface TestViewController () <RSUploadDelegate,RSDownloadDelegate,UITextViewDelegate,RSMessengerDelegate>
 
-@property (nonatomic,strong) RSMessager *messager;
+@property (nonatomic,strong) RSMessenger *messager;
 
 @end
 
@@ -24,8 +24,8 @@
     [super viewDidLoad];
     inputTextView.delegate = self;
     [RSNodeManage join];
-    [[RSDownload sharedInstance] addDelegate:self];
-    [[RSUpload sharedInstance] addDelegate:self];
+    [RSDownload addDelegate:self];
+    [RSUpload addDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,7 +44,7 @@
 
 - (IBAction)downloadPressed:(id)sender {
     
-    [[RSDownload sharedInstance] downloadFile:@"file"];
+    [RSDownload downloadFile:@"file"];
     [self updateOutput:@"Started downloading"];
 }
 

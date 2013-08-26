@@ -26,7 +26,7 @@
 #import <ifaddrs.h>
 #import <arpa/inet.h>
 
-@interface RSUtilities () <RSMessagerDelegate>
+@interface RSUtilities () <RSMessengerDelegate>
 
 @end
 
@@ -181,7 +181,7 @@
         totalSpace = [fileSystemSizeInBytes unsignedLongLongValue];
         totalFreeSpace = [freeFileSystemSizeInBytes unsignedLongLongValue];
     } else {
-        NSLog(@"Error Obtaining System Memory Info: Domain = %@, Code = %ld", [error domain], (long)[error code]);
+        NSLog(@"Error Obtaining System Memory Info: Domain = %@, Code = %d", [error domain], (long)[error code]);
     }
     
     return totalFreeSpace;

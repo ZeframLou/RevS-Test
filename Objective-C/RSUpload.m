@@ -41,7 +41,7 @@
     if (!sharedInstance) {
         sharedInstance = [[RSUpload alloc]init];
         sharedInstance.delegates = [NSMutableArray array];
-        [[RSListener sharedListener]addDelegate:sharedInstance];
+        [RSListener addDelegate:sharedInstance];
     }
     return sharedInstance;
 }
@@ -52,8 +52,8 @@
     
     for (NSUInteger i = 0; i < K_UPLOAD; i++) {
         if (i < contactList.count) {
-            NSString *messageString = [RSMessager messageWithIdentifier:@"UFILE" arguments:@[fileName,[RSUtilities getLocalIPAddress],[NSString stringWithFormat:@"%ld",TTL]]];
-            RSMessager *message = [RSMessager messagerWithPort:UPLOAD_PORT];
+            NSString *messageString = [RSMessenger messageWithIdentifier:@"UFILE" arguments:@[fileName,[RSUtilities getLocalIPAddress],[NSString stringWithFormat:@"%ld",(unsigned long)TTL]]];
+            RSMessenger *message = [RSMessenger messengerWithPort:UPLOAD_PORT];
             [message addDelegate:[RSListener sharedListener]];
             [message sendTcpMessage:messageString toHost:[contactList objectAtIndex:i] tag:0];
         }
@@ -62,16 +62,16 @@
 
 + (void)uploadFile:(NSString *)fileName toHost:(NSString *)host
 {
-    NSString *messageString = [RSMessager messageWithIdentifier:@"SENDFILE" arguments:@[fileName,[NSData decryptData:[NSData dataWithContentsOfFile:[STORED_DATA_DIRECTORY stringByAppendingString:fileName]] withKey:FILE_CODE],@"0",[RSUtilities getLocalIPAddress]]];
-    RSMessager *message = [RSMessager messagerWithPort:UPLOAD_PORT];
+    NSString *messageString = [RSMessenger messageWithIdentifier:@"SENDFILE" arguments:@[fileName,[NSData decryptData:[NSData dataWithContentsOfFile:[STORED_DATA_DIRECTORY stringByAppendingString:fileName]] withKey:FILE_CODE],@"0",[RSUtilities getLocalIPAddress]]];
+    RSMessenger *message = [RSMessenger messengerWithPort:UPLOAD_PORT];
     [message addDelegate:[RSListener sharedListener]];
     [message sendTcpMessage:messageString toHost:host tag:0];
 }
 
-- (void)addDelegate:(id <RSUploadDelegate>)delegate
++ (void)addDelegate:(id <RSUploadDelegate>)delegate
 {
-    if (![delegates containsObject:delegate]) {
-        [delegates addObject:delegate];
+    if (![[RSUpload sharedInstance].delegates containsObject:delegate]) {
+        [[RSUpload sharedInstance].delegates addObject:delegate];
     }
 }
 
