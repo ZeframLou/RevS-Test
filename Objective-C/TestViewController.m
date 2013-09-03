@@ -11,13 +11,11 @@
 
 @interface TestViewController () <RSUploadDelegate,RSDownloadDelegate,UITextViewDelegate,RSMessengerDelegate>
 
-@property (nonatomic,strong) RSMessenger *messager;
-
 @end
 
 @implementation TestViewController
 
-@synthesize inputTextView,outputTextView,messager;
+@synthesize inputTextView,outputTextView;
 
 - (void)viewDidLoad
 {
