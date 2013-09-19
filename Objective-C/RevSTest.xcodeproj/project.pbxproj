@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE3D3D8D17E73A6C0025F189 /* iOSPortMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D3D8A17E73A6C0025F189 /* iOSPortMapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE3D3D8E17E73A6C0025F189 /* RSPortMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3D3D8C17E73A6C0025F189 /* RSPortMapper.m */; };
 		CE98B55E17CA315E00F1F8BF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBF5D9017BA05B800FEFB22 /* MainStoryboard.storyboard */; };
 		CE98B55F17CA315E00F1F8BF /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBF5E0417BBCB6500FEFB22 /* MainStoryboard_iPad.storyboard */; };
 		CE98B56017CA315E00F1F8BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEBF5D8117BA05B800FEFB22 /* InfoPlist.strings */; };
@@ -24,7 +26,6 @@
 		CEBF5DF317BA4EB700FEFB22 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF5DE117BA4EB600FEFB22 /* GCDAsyncUdpSocket.m */; };
 		CEBF5DF417BA4EB700FEFB22 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF5DE317BA4EB600FEFB22 /* NSData+AES.m */; };
 		CEBF5DF517BA4EB700FEFB22 /* RSDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF5DE717BA4EB600FEFB22 /* RSDownload.m */; };
-		CEBF5DF617BA4EB700FEFB22 /* RSListener.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF5DE917BA4EB600FEFB22 /* RSListener.m */; };
 		CEBF5DF817BA4EB700FEFB22 /* RSNodeManage.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF5DED17BA4EB700FEFB22 /* RSNodeManage.m */; };
 		CEBF5DF917BA4EB700FEFB22 /* RSUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF5DEF17BA4EB700FEFB22 /* RSUpload.m */; };
 		CEBF5DFA17BA4EB700FEFB22 /* RSUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF5DF117BA4EB700FEFB22 /* RSUtilities.m */; };
@@ -33,10 +34,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE98B56117CA335500F1F8BF /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = SOURCE_ROOT; };
+		CE3D3D8917E73A6C0025F189 /* iOSPortMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iOSPortMapper.h; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/iOSPortMapper.h"; sourceTree = "<absolute>"; };
+		CE3D3D8A17E73A6C0025F189 /* iOSPortMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iOSPortMapper.m; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/iOSPortMapper.m"; sourceTree = "<absolute>"; };
+		CE3D3D8B17E73A6C0025F189 /* RSPortMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSPortMapper.h; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/RSPortMapper.h"; sourceTree = "<absolute>"; };
+		CE3D3D8C17E73A6C0025F189 /* RSPortMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSPortMapper.m; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/RSPortMapper.m"; sourceTree = "<absolute>"; };
+		CE98B56117CA335500F1F8BF /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/GCDAsyncSocket.m"; sourceTree = "<absolute>"; };
 		CE98B56317CA349400F1F8BF /* RevSTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RevSTest-Prefix.pch"; sourceTree = SOURCE_ROOT; };
-		CE98B56417CB0C0700F1F8BF /* RSMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSMessenger.h; sourceTree = SOURCE_ROOT; };
-		CE98B56517CB0C0700F1F8BF /* RSMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSMessenger.m; sourceTree = SOURCE_ROOT; };
+		CE98B56417CB0C0700F1F8BF /* RSMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSMessenger.h; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/RSMessenger.h"; sourceTree = "<absolute>"; };
+		CE98B56517CB0C0700F1F8BF /* RSMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSMessenger.m; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/RSMessenger.m"; sourceTree = "<absolute>"; };
 		CEBF5D7517BA05B800FEFB22 /* RevSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBF5D7817BA05B800FEFB22 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEBF5D7A17BA05B800FEFB22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,23 +57,21 @@
 		CEBF5D9117BA05B800FEFB22 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		CEBF5D9317BA05B800FEFB22 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = SOURCE_ROOT; };
 		CEBF5D9417BA05B800FEFB22 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = SOURCE_ROOT; };
-		CEBF5DDE17BA4EB600FEFB22 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = SOURCE_ROOT; };
-		CEBF5DE017BA4EB600FEFB22 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = SOURCE_ROOT; };
-		CEBF5DE117BA4EB600FEFB22 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = SOURCE_ROOT; };
-		CEBF5DE217BA4EB600FEFB22 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = SOURCE_ROOT; };
-		CEBF5DE317BA4EB600FEFB22 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = SOURCE_ROOT; };
-		CEBF5DE417BA4EB600FEFB22 /* RevS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevS.h; sourceTree = SOURCE_ROOT; };
-		CEBF5DE517BA4EB600FEFB22 /* RSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSConstants.h; sourceTree = SOURCE_ROOT; };
-		CEBF5DE617BA4EB600FEFB22 /* RSDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDownload.h; sourceTree = SOURCE_ROOT; };
-		CEBF5DE717BA4EB600FEFB22 /* RSDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDownload.m; sourceTree = SOURCE_ROOT; };
-		CEBF5DE817BA4EB600FEFB22 /* RSListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSListener.h; sourceTree = SOURCE_ROOT; };
-		CEBF5DE917BA4EB600FEFB22 /* RSListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSListener.m; sourceTree = SOURCE_ROOT; };
-		CEBF5DEC17BA4EB600FEFB22 /* RSNodeManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSNodeManage.h; sourceTree = SOURCE_ROOT; };
-		CEBF5DED17BA4EB700FEFB22 /* RSNodeManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSNodeManage.m; sourceTree = SOURCE_ROOT; };
-		CEBF5DEE17BA4EB700FEFB22 /* RSUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSUpload.h; sourceTree = SOURCE_ROOT; };
-		CEBF5DEF17BA4EB700FEFB22 /* RSUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSUpload.m; sourceTree = SOURCE_ROOT; };
-		CEBF5DF017BA4EB700FEFB22 /* RSUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSUtilities.h; sourceTree = SOURCE_ROOT; };
-		CEBF5DF117BA4EB700FEFB22 /* RSUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSUtilities.m; sourceTree = SOURCE_ROOT; };
+		CEBF5DDE17BA4EB600FEFB22 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/GCDAsyncSocket.h"; sourceTree = "<absolute>"; };
+		CEBF5DE017BA4EB600FEFB22 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/GCDAsyncUdpSocket.h"; sourceTree = "<absolute>"; };
+		CEBF5DE117BA4EB600FEFB22 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/GCDAsyncUdpSocket.m"; sourceTree = "<absolute>"; };
+		CEBF5DE217BA4EB600FEFB22 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+AES.h"; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/NSData+AES.h"; sourceTree = "<absolute>"; };
+		CEBF5DE317BA4EB600FEFB22 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+AES.m"; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/NSData+AES.m"; sourceTree = "<absolute>"; };
+		CEBF5DE417BA4EB600FEFB22 /* RevS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RevS.h; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/RevS.h"; sourceTree = "<absolute>"; };
+		CEBF5DE517BA4EB600FEFB22 /* RSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSConstants.h; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/RSConstants.h"; sourceTree = "<absolute>"; };
+		CEBF5DE617BA4EB600FEFB22 /* RSDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSDownload.h; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/RSDownload.h"; sourceTree = "<absolute>"; };
+		CEBF5DE717BA4EB600FEFB22 /* RSDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSDownload.m; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/RSDownload.m"; sourceTree = "<absolute>"; };
+		CEBF5DEC17BA4EB600FEFB22 /* RSNodeManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSNodeManage.h; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/RSNodeManage.h"; sourceTree = "<absolute>"; };
+		CEBF5DED17BA4EB700FEFB22 /* RSNodeManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSNodeManage.m; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/RSNodeManage.m"; sourceTree = "<absolute>"; };
+		CEBF5DEE17BA4EB700FEFB22 /* RSUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSUpload.h; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/RSUpload.h"; sourceTree = "<absolute>"; };
+		CEBF5DEF17BA4EB700FEFB22 /* RSUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSUpload.m; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/RSUpload.m"; sourceTree = "<absolute>"; };
+		CEBF5DF017BA4EB700FEFB22 /* RSUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSUtilities.h; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/RSUtilities.h"; sourceTree = "<absolute>"; };
+		CEBF5DF117BA4EB700FEFB22 /* RSUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSUtilities.m; path = "/Users/user/Desktop/RevS Project/RevSTest/Objective-C/RSUtilities.m"; sourceTree = "<absolute>"; };
 		CEBF5DFB17BA514200FEFB22 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		CEBF5DFD17BA514C00FEFB22 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CEBF5E0417BBCB6500FEFB22 /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = SOURCE_ROOT; };
@@ -152,6 +155,10 @@
 		CEBF5DDD17BA4E7900FEFB22 /* RevS */ = {
 			isa = PBXGroup;
 			children = (
+				CE3D3D8917E73A6C0025F189 /* iOSPortMapper.h */,
+				CE3D3D8A17E73A6C0025F189 /* iOSPortMapper.m */,
+				CE3D3D8B17E73A6C0025F189 /* RSPortMapper.h */,
+				CE3D3D8C17E73A6C0025F189 /* RSPortMapper.m */,
 				CEBF5DDE17BA4EB600FEFB22 /* GCDAsyncSocket.h */,
 				CE98B56117CA335500F1F8BF /* GCDAsyncSocket.m */,
 				CEBF5DE017BA4EB600FEFB22 /* GCDAsyncUdpSocket.h */,
@@ -162,8 +169,6 @@
 				CEBF5DE517BA4EB600FEFB22 /* RSConstants.h */,
 				CEBF5DE617BA4EB600FEFB22 /* RSDownload.h */,
 				CEBF5DE717BA4EB600FEFB22 /* RSDownload.m */,
-				CEBF5DE817BA4EB600FEFB22 /* RSListener.h */,
-				CEBF5DE917BA4EB600FEFB22 /* RSListener.m */,
 				CE98B56417CB0C0700F1F8BF /* RSMessenger.h */,
 				CE98B56517CB0C0700F1F8BF /* RSMessenger.m */,
 				CEBF5DEC17BA4EB600FEFB22 /* RSNodeManage.h */,
@@ -251,12 +256,13 @@
 				CEBF5DF317BA4EB700FEFB22 /* GCDAsyncUdpSocket.m in Sources */,
 				CEBF5DF417BA4EB700FEFB22 /* NSData+AES.m in Sources */,
 				CEBF5DF517BA4EB700FEFB22 /* RSDownload.m in Sources */,
-				CEBF5DF617BA4EB700FEFB22 /* RSListener.m in Sources */,
 				CEBF5DF817BA4EB700FEFB22 /* RSNodeManage.m in Sources */,
 				CEBF5DF917BA4EB700FEFB22 /* RSUpload.m in Sources */,
 				CEBF5DFA17BA4EB700FEFB22 /* RSUtilities.m in Sources */,
 				CE98B56217CA335500F1F8BF /* GCDAsyncSocket.m in Sources */,
 				CE98B56617CB0C0700F1F8BF /* RSMessenger.m in Sources */,
+				CE3D3D8D17E73A6C0025F189 /* iOSPortMapper.m in Sources */,
+				CE3D3D8E17E73A6C0025F189 /* RSPortMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +352,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../..\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RevSTest-Prefix.pch";
@@ -373,6 +380,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../..\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RevSTest-Prefix.pch";
