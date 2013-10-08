@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>126312CA-5549-4318-8806-ABC9D02C7E81</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RevSTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7F66FC02-A179-4BF7-AEFD-7A5C10D88AFB</key>
+		<string>https://github.com/theGreatLzbdd/RevSTest-Objective-C.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Objective-C/RevSTest.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7F66FC02-A179-4BF7-AEFD-7A5C10D88AFB</key>
+		<string>../../..</string>
+		<key>A5DA786B-6078-40F5-AAB2-9B63227EEA5E</key>
+		<string>../../../../../ObjectiveC Apps/RealProjects/RevS</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/theGreatLzbdd/RevSTest-Objective-C.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7F66FC02-A179-4BF7-AEFD-7A5C10D88AFB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A5DA786B-6078-40F5-AAB2-9B63227EEA5E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RevS</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7F66FC02-A179-4BF7-AEFD-7A5C10D88AFB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RevSTest</string>
+		</dict>
+	</array>
+</dict>
+</plist>
