@@ -10,12 +10,11 @@
 #import "RevS.h"
 
 @interface TestViewController () <RSUploadDelegate,RSDownloadDelegate,UITextViewDelegate,RSMessengerDelegate>
-@property (nonatomic,strong) RSMessenger *messenger1;
 @end
 
 @implementation TestViewController
 
-@synthesize inputTextView,outputTextView,messenger1;
+@synthesize inputTextView,outputTextView;
 
 - (void)viewDidLoad
 {
@@ -24,9 +23,6 @@
     [RSClient join];
     [RSDownload addDelegate:self];
     [RSUpload addDelegate:self];
-    [RSUtilities setNatTier:RSTierNoNatOrNatPmp];
-    messenger1 = [RSMessenger messengerWithPort:MESSAGE_PORT delegate:self];
-    [RSMessenger registerMessageIdentifiers:@[@"Test"] delegate:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,20 +31,14 @@
 }
 
 - (IBAction)uploadPressed:(id)sender {
-    /*NSString *inputString = inputTextView.text;
+    NSString *inputString = inputTextView.text;
     if (inputString.length > 0) {
         [inputString writeToFile:[STORED_DATA_DIRECTORY stringByAppendingString:@"upload"] atomically:YES encoding:NSASCIIStringEncoding error:nil];
         [RSUpload uploadFile:@"upload"];
         [self updateOutput:@"Started uploading"];
-    }*/
-    NSString *privateAddress;
-    if ([[RSUtilities privateIpAddress]isEqualToString:@"192.168.1.102"]) {
-        privateAddress = @"192.168.1.100";
-    } else {
-        privateAddress = @"192.168.1.102";
     }
-    //[messenger1 sendServerMessage:[RSMessenger messageWithIdentifier:@"Test" arguments:@[@"I'm not a man,I walk in eternity."]] toServerAddress:privateAddress tag:0];
-    [messenger1 sendUdpMessage:[RSMessenger messageWithIdentifier:@"Test" arguments:@[@"I'm not a man,I walk in eternity."]]toHostWithPublicAddress:[RSUtilities publicIpAddress] privateAddress:privateAddress tag:0];
+    //[messenger1 sendServerMessage:[RSMessenger messageWithIdentifier:@"Test" arguments:@[@"I'm not a man,I walk in eternity."]] toServerAddress:SERVER_IP tag:0];
+    //[messenger1 sendUdpMessage:[RSMessenger messageWithIdentifier:@"Test" arguments:@[@"I'm not a man,I walk in eternity."]]toHostWithPublicAddress:SERVER_IP privateAddress:@"192.168.1.107" tag:0];
 }
 
 - (IBAction)downloadPressed:(id)sender {
