@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>126312CA-5549-4318-8806-ABC9D02C7E81</string>
+	<string>955BE4B0-576B-44D7-AE26-550D898D3246</string>
 	<key>IDESourceControlProjectName</key>
 	<string>RevSTest</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>7F66FC02-A179-4BF7-AEFD-7A5C10D88AFB</key>
-		<string>https://github.com/theGreatLzbdd/RevSTest-Objective-C.git</string>
+		<key>4E96F2E9-6ACC-4601-BF2D-9C962DC00CEA</key>
+		<string>https://github.com/theGreatLzbdd/RevS-Test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Objective-C/RevSTest.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>7F66FC02-A179-4BF7-AEFD-7A5C10D88AFB</key>
-		<string>../../..</string>
-		<key>A5DA786B-6078-40F5-AAB2-9B63227EEA5E</key>
+		<key>23968FC4-A036-4830-BB4D-9A9D15241470</key>
 		<string>../../../../../ObjectiveC Apps/RealProjects/RevS</string>
+		<key>4E96F2E9-6ACC-4601-BF2D-9C962DC00CEA</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/theGreatLzbdd/RevSTest-Objective-C.git</string>
+	<string>https://github.com/theGreatLzbdd/RevS-Project-Objective-C.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>7F66FC02-A179-4BF7-AEFD-7A5C10D88AFB</string>
+	<string>4E96F2E9-6ACC-4601-BF2D-9C962DC00CEA</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>A5DA786B-6078-40F5-AAB2-9B63227EEA5E</string>
+			<string>23968FC4-A036-4830-BB4D-9A9D15241470</string>
 			<key>IDESourceControlWCCName</key>
 			<string>RevS</string>
 		</dict>
@@ -42,9 +42,9 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>7F66FC02-A179-4BF7-AEFD-7A5C10D88AFB</string>
+			<string>4E96F2E9-6ACC-4601-BF2D-9C962DC00CEA</string>
 			<key>IDESourceControlWCCName</key>
-			<string>RevSTest</string>
+			<string>RevS Test</string>
 		</dict>
 	</array>
 </dict>
