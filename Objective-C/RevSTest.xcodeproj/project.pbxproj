@@ -16,6 +16,7 @@
 		CE98B56017CA315E00F1F8BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEBF5D8117BA05B800FEFB22 /* InfoPlist.strings */; };
 		CE98B56217CA335500F1F8BF /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = CE98B56117CA335500F1F8BF /* GCDAsyncSocket.m */; };
 		CE98B56617CB0C0700F1F8BF /* RSMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = CE98B56517CB0C0700F1F8BF /* RSMessenger.m */; };
+		CE9E640A1851E815001B6319 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9E64091851E815001B6319 /* SystemConfiguration.framework */; };
 		CEBF5D7917BA05B800FEFB22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBF5D7817BA05B800FEFB22 /* UIKit.framework */; };
 		CEBF5D7B17BA05B800FEFB22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBF5D7A17BA05B800FEFB22 /* Foundation.framework */; };
 		CEBF5D7D17BA05B800FEFB22 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBF5D7C17BA05B800FEFB22 /* CoreGraphics.framework */; };
@@ -46,6 +47,7 @@
 		CE98B56317CA349400F1F8BF /* RevSTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RevSTest-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		CE98B56417CB0C0700F1F8BF /* RSMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSMessenger.h; path = "/Users/user/Desktop/RevS Project/RevS Test/Objective-C/RSMessenger.h"; sourceTree = "<absolute>"; };
 		CE98B56517CB0C0700F1F8BF /* RSMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSMessenger.m; path = "/Users/user/Desktop/RevS Project/RevS Test/Objective-C/RSMessenger.m"; sourceTree = "<absolute>"; };
+		CE9E64091851E815001B6319 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CEBF5D7517BA05B800FEFB22 /* RevSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBF5D7817BA05B800FEFB22 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEBF5D7A17BA05B800FEFB22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9E640A1851E815001B6319 /* SystemConfiguration.framework in Frameworks */,
 				CE8F89BD181BA51A0071345E /* CFNetwork.framework in Frameworks */,
 				CEBF5DFC17BA514200FEFB22 /* Security.framework in Frameworks */,
 				CEBF5D7917BA05B800FEFB22 /* UIKit.framework in Frameworks */,
@@ -131,6 +134,7 @@
 		CEBF5D7717BA05B800FEFB22 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE9E64091851E815001B6319 /* SystemConfiguration.framework */,
 				CE8F89BC181BA51A0071345E /* CFNetwork.framework */,
 				CEBF5DFB17BA514200FEFB22 /* Security.framework */,
 				CEBF5D7817BA05B800FEFB22 /* UIKit.framework */,
